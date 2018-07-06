@@ -89,16 +89,20 @@ server.get('api/reports', (req,res,next) => {
     return next();
 });
 server.post('api/reports', (req,res,next) => {
+    console.log(req.body);
     if (!req.body || 
         !req.body.Cage_ID || 
+        !req.body.CELL_ID ||
         !req.body.userid || 
         !req.body.fromTime ||
         !req.body.toTime ||
         !req.body.cleaningStatus ) {
         return next(new errors.BadRequestError());
     }
+    console.log( req.body.Cage_ID, req.body.CELL_ID, req.body.userid, req.body.fromTime, req.body.toTime, req.body.cleaningStatus);
     seagatedata.create(
-        req.body.Cage_ID, 
+        req.body.Cage_ID,
+        req.body.CELL_ID,
         req.body.userid,
         req.body.fromTime,
         req.body.toTime,
