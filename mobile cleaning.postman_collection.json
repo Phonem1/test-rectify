@@ -135,7 +135,7 @@
 								"reports"
 							]
 						},
-						"description": "Actual API in test"
+						"description": "Actual API in Seagate"
 					},
 					"response": []
 				},
@@ -151,7 +151,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \"Cage_ID\":\"CID001\",\n  \"userid\":395882 ,\n  \"fromTime\":\"2018-06-19 13:30:40\" , \n  \"toTime\":\"2018-06-19 20:30:20\", \n  \"cleaningStatus\":\"Pass\"\n\t\n}"
+							"raw": "{ \"Cage_ID\":\"CID001\",\n  \"CELL_ID\": \"CELL 7\",\n  \"userid\":395882 ,\n  \"fromTime\":\"2018-06-19 13:30:40\" , \n  \"toTime\":\"2018-06-19 20:30:20\", \n  \"cleaningStatus\":\"Pass\"\n\t\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/reports",
@@ -165,7 +165,7 @@
 								"reports"
 							]
 						},
-						"description": "Actual API in test"
+						"description": "Actual API in Seagate"
 					},
 					"response": []
 				}
